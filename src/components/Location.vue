@@ -28,7 +28,7 @@ export default {
             var config = {
               headers: {"Access-Control-Allow-Origin": "*"}
             };
-            axios.get('http://localhost:8081/bundan', config).then((response) => {
+            axios.get('http://localhost:8081/findRestaurant', config).then((response) => {
                 console.log(response.data.result)
                 this.listResturant = response.data.result
             })
